@@ -28,7 +28,7 @@ public class UnclusteredBPTreeSalaryTest {
 	@Test
 	public void test() throws Exception {	
 		long time = System.currentTimeMillis();
-		List<PersonEntry> result = bptree.intervalQueryEntries(new PersonSalaryKey(500), new PersonSalaryKey(12000));
+		List<PersonEntry> result = bptree.intervalQueryEntries(new PersonSalaryKey(1000), new PersonSalaryKey(1200));
 		time = System.currentTimeMillis() - time;
 		
 		System.out.println(time);
